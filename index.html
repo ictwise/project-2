@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Quiz</title>
+    <link type="text/css" rel="stylesheet" href="assets\css\style.css" />
+  </head>
+  <body>
+    <div id="container">
+      
+      <div id="hero">
+        <div id="imgbg"></div>
+        <div id="start">Start Quiz!</div>
+            
+      
+    </div>
+    <div id="quiz" style="display: none">
+        <div id="question"></div>
+        <div id="choices">
+          <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+          <div class="choice" id="B" onclick="checkAnswer('B')"></div>
+          <div class="choice" id="C" onclick="checkAnswer('C')"></div>
+          <div class="choice" id="D" onclick="checkAnswer('D')"></div>
+        </div>
+      
+      </div>
+      <div id="progress"></div>
+      <div id="scoreContainer" style="display: none">
+        
+      </div>
+          
     
-</body>
+<div id="buttons">
+      <button
+        id="resetbtn"
+        type="button"
+        style="display: none"
+        onClick="reset()"
+      >
+        Retry
+      </button>
+      <button id="closebtn" style="display: none" onclick="javascript:window.close()">close</button>
+    </button>
+    
+  </div>
+  <div id="instructions"><p>Click <span class="bold">"Start Quiz"</span>
+    <br>Click on the <span class="bold">correct answer</span>
+    <br>If you were correct the circle turns <span class="bold">green</span>
+    <br><span class="bold">Your result</span> is shown at the end</p>
+  </div>
+    <!-- JS and questions -->
+    <script type="text/javascript" src="assets\js\questions.js"></script>
+    <script type="text/javascript" src="assets\js\script.js"></script>
+  </body>
 </html>
+
+<!-- https://www.youtube.com/watch?v=49pYIMygIcU -->
+<!-- <a href='https://www.freepik.com/photos/girl-pointing'>Girl pointing photo created by wayhomestudio - www.freepik.com</a> -->
+<!-- <a href='https://www.freepik.com/photos/brunette'>Brunette photo created by wayhomestudio - www.freepik.com</a> -->
