@@ -38,3 +38,127 @@ function buildQuestion() {
 //start the quiz when the start text is clicked on
 
 start.addEventListener("click", startQuiz);
+// start quiz
+
+function startQuiz() {
+  // change the start text to none which will hide it
+
+  start.style.display = "none";
+  instructions.style.display = "none";
+  img.style.display = "none";
+
+  // buildQuestion- pull out the question and options of the current question and populate the correct part of the dom
+  buildQuestion();
+  quiz.style.display = "block";
+  renderProgress();
+}
+
+// render progress
+function renderProgress() {
+  // create a var called qIndex to log how many questions have been answered, using a for loop for each question create a div called prog with an id of the qindex that can be styled correct or wrong
+  for (let qIndex = 0; qIndex <= lastQuestion; qIndex++) {
+    progress.innerHTML += "<div class='prog' id=" + qIndex + "></div>";
+  }
+  // this is done only while the  question counter is less than or equal to the total number of questions
+  if (questionCounter <= questions.length) {
+    // questionCounter++;
+    buildQuestion();
+  } else {
+    // end the quiz and show the score
+
+    scoreRender();
+  }
+}
+
+
+// checkAnswer
+function checkAnswer(answer) {
+  if (questions[questionCounter].correct == answer) {
+    // answer is correct
+    score++;
+    // change progress color to green
+    answerIsCorrect();
+  } else {
+    // answer is wrong
+    // change progress color to red
+    answerIsWrong();
+  }
+
+  if (questionCounter < lastQuestion) {
+    questionCounter++;
+
+    buildQuestion();
+  } else {
+    // end the quiz and show the score
+    // clearInterval(TIMER);
+    scoreRender();
+  }
+}
+
+// answer is correct
+function answerIsCorrect() {
+  document.getElementById(questionCounter).style.backgroundColor = "#0f0";
+}
+
+// answer is Wrong
+function answerIsWrong() {
+  document.getElementById(questionCounter).style.backgroundColor = "red";
+}
+
+// score render
+function scoreRender() {
+  // calculate the amount of question percent answered by the user
+  let scorePerCent = Math.round((100 * score) / questions.length);
+  scoreDiv.innerHTML += "<p> Your score is " + scorePerCent + "%</p>";
+
+  quiz.style.display = "none";
+  scoreDiv.style.display = "block";
+  resetbtn.style.display = "block";
+  closebtn.style.display = "block";
+  img.style.display = "block";
+  img.style.width = "40%";
+}
+
+  // score render
+function scoreRender() {
+  // calculate the amount of question percent answered by the user
+  let scorePerCent = Math.round((100 * score) / questions.length);
+  scoreDiv.innerHTML += "<p> Your score is " + scorePerCent + "%</p>";
+
+  quiz.style.display = "none";
+  scoreDiv.style.display = "block";
+  resetbtn.style.display = "block";
+  closebtn.style.display = "block";
+  img.style.display = "block";
+  img.style.width = "40%";
+}
+
+// clear progress
+function clearProgress() {
+  // empties prog class and container so % is not incremented and circles are white and not doubled
+  questionCounter = 0;
+  score = 0;
+  // hides scores to show question
+  document.getElementById("progress").innerHTML = "";
+  document.getElementById("scoreContainer").innerHTML = "";
+  // resets score
+  scoreContainer.style.display = "none";
+  }
+
+function reset() {
+  quiz.style.display = "block";
+  resetbtn.style.display = "none";
+  closebtn.style.display = "none";
+  img.style.display = "none";
+
+  clearProgress();
+
+  buildQuestion();
+
+  renderProgress();
+}
+
+
+
+
+
