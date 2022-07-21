@@ -11,7 +11,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 
 //load image
 let img = document.createElement("img");
-img.src = "../assets/images/bg.jpg";
+img.src = "assets/images/bg.jpg";
 let div = document.getElementById("imgbg");
 div.appendChild(img);
 img.id = "imgbg";
