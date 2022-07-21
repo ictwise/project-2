@@ -10,8 +10,9 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 
 //load image
+
 let img = document.createElement("img");
-img.src = "../assets/images/bg.jpg";
+img.src = "assets/images/bg.jpg";
 let div = document.getElementById("imgbg");
 div.appendChild(img);
 img.id = "imgbg";
@@ -156,6 +157,21 @@ function reset() {
   buildQuestion();
 
   renderProgress();
+}
+
+function backHome() {
+
+start.style.display = "inline-flex";
+div.appendChild(img);
+img.id = "imgbg";
+img.style.width = "90%";
+quiz.style.display = "none";
+resetbtn.style.display = "none";
+closebtn.style.display = "none";
+instructions.style.display = "block";
+clearProgress();
+ 
+
 }
 
 // module.exports.qIndex = qIndex;
