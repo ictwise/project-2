@@ -1,0 +1,23 @@
+{
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "The fitness quiz can be added as an interactive section to a sports/fitness site. It's intended to engage the user and provde basic information on fitness techniques. Questions can be easily updated by the developer by changing the questions in the questions.js file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ictwise/project-2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ictwise/project-2/issues"
+  },
+  "homepage": "https://github.com/ictwise/project-2#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
