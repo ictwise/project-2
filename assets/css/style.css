@@ -24,9 +24,9 @@
   }
   #hero {
     display: contents;
-    box-align: center;
+
     align-items: center;
-    box-pack: center;
+   
     justify-content: center;
   }
   #start {
@@ -46,7 +46,7 @@
     margin-top: 60px;
   }
   #start:hover {
-    border: 3px solid rgb#2f4f4f;
+    border: rgb#2f6060;
     color: rgb(254, 255, 255);
     background-color: rgb(24, 134, 129);
   }
@@ -209,6 +209,4 @@
         margin-left: auto;
         margin-right: auto;
         padding: 20px 10px;
-      }
-
-    }
+      }}}

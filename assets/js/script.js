@@ -90,7 +90,7 @@ function checkAnswer(answer) {
     buildQuestion();
   } else {
     // end the quiz and show the score
-    // clearInterval(TIMER);
+   
     scoreRender();
   }
 }
@@ -158,7 +158,9 @@ function reset() {
   renderProgress();
 }
 
-
+// module.exports.qIndex = qIndex;
+// module.exports.buildQuestion = buildQuestion;
+module.exports = buildQuestion;
 
 
 
