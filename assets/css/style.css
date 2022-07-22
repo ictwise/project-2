@@ -14,11 +14,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
-    width: 100%;
+    width: 95%;
     border-radius: 16px;
     position: relative;
   }
@@ -46,15 +46,16 @@
     margin-top: 60px;
   }
   #start:hover {
-    border-style: solid;
+    
     color: rgb(254, 255, 255);
-    background-color: rgb(24, 134, 129);
+    border: 3px solid rgb(2, 40, 39);
   }
   #imgbg {
     border-radius: 16px;
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
+    display:block;
   }
   #quiz {
     align-items: center;
@@ -101,14 +102,14 @@
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 10px;
+    padding: 10px 10px;
   }
   
   .prog {
     display: inline-block;
     flex-direction: row;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border: 1px solid #000;
     background: rgb(254, 255, 255);
     border-radius: 50%;
@@ -157,11 +158,33 @@
     width: 75%;
     background-color: rgb(239, 231, 231);
     border-radius: 16px;
-    margin-top: 60px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 3px solid rgb(24, 134, 129);
   
 
   }
+  @media only screen and (min-width: 750px) {
+    #quiz {
+        width: 75%;
+    }
+    #container {
+      width: 75%;
+    }
+    #imgbg {
+      width: 75%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+  #quiz {
+      width: 75%;
+  }
+  #container {
+    width: 60%;
+  }
+  #imgbg {
+    width: 70%;
+  }
+}

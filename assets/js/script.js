@@ -17,6 +17,7 @@ let div = document.getElementById("imgbg");
 div.appendChild(img);
 img.id = "imgbg";
 
+
 //create some variables
 
 const lastQuestion = questions.length - 1;
@@ -132,6 +133,7 @@ function scoreRender() {
   closebtn.style.display = "block";
   img.style.display = "block";
   img.style.width = "40%";
+  
 }
 
 // clear progress
