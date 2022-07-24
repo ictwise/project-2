@@ -1,16 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1658644035136" clover="3.2.0">
-  <project timestamp="1658644035136" name="All files">
-    <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1" elements="8" coveredelements="3" complexity="0" loc="7" ncloc="7" packages="1" files="1" classes="1"/>
-    <file name="buildQuestion.js" path="C:\Users\ictwi\OneDrive\Full Stack Developer Training\project-2\assets\js\buildQuestion.js">
-      <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <line num="5" count="1" type="stmt"/>
-      <line num="8" count="0" type="stmt"/>
-      <line num="9" count="0" type="stmt"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="11" count="0" type="stmt"/>
-      <line num="12" count="0" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
+<coverage generated="1658670887563" clover="3.2.0">
+  <project timestamp="1658670887563" name="All files">
+    <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0" elements="2" coveredelements="2" complexity="0" loc="2" ncloc="2" packages="1" files="1" classes="1"/>
+    <file name="questions.js" path="C:\Users\ictwi\OneDrive\Full Stack Developer Training\project-2\assets\js\questions.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="92" count="1" type="stmt"/>
     </file>
   </project>
 </coverage>

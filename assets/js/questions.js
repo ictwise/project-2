@@ -88,3 +88,5 @@ let questions = [
     correct: "B",
   },
 ];
+
+module.exports = { questions };
