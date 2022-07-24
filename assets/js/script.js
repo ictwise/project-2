@@ -12,7 +12,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 //load image
 
 let img = document.createElement("img");
-img.src = "assets/images/bg.png";
+img.src = "assets/images/bg.jpg";
 img.alt = "woman doing yoga";
 
 let div = document.getElementById("imgbg");
