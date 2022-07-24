@@ -28,6 +28,7 @@
     align-items: center;
    
     justify-content: center;
+    
   }
   #start {
     padding: 80px;
@@ -54,6 +55,7 @@
     border-radius: 16px;
     margin-left: auto;
     margin-right: auto;
+    width: 90%;
     max-width: 90%;
     display:block;
     
@@ -98,12 +100,14 @@
     font-weight: bold;
   }
   #progress {
-    position: absolute;
+    position: fixed;
+    bottom:25px;
     width: auto;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
     padding: 10px 10px;
+    
   }
   
   .prog {
@@ -187,6 +191,6 @@
     width: 60%;
   }
   #imgbg {
-    width: 70%;
+    width: 60%;
   }
 }
