@@ -164,10 +164,7 @@ clearProgress();
 
 }
 
-// module.exports.qIndex = qIndex;
-// module.exports.buildQuestion = buildQuestion;
 
-module.exports = { question, questions };
 
 
 
