@@ -123,21 +123,6 @@ function scoreRender() {
   img.style.width = "40%";
 }
 
-  // score render
-function scoreRender() {
-  // calculate the amount of question percent answered by the user
-  let scorePerCent = Math.round((100 * score) / questions.length);
-  scoreDiv.innerHTML += "<p> Your score is " + scorePerCent + "%</p>";
-
-  quiz.style.display = "none";
-  scoreDiv.style.display = "block";
-  resetbtn.style.display = "block";
-  closebtn.style.display = "block";
-  img.style.display = "block";
-  img.style.width = "40%";
-  img.style.marginTop = "40px";
-  
-}
 
 // clear progress
 function clearProgress() {
@@ -181,7 +166,8 @@ clearProgress();
 
 // module.exports.qIndex = qIndex;
 // module.exports.buildQuestion = buildQuestion;
-module.exports = buildQuestion;
+
+module.exports = { question, questions };
 
 
 
