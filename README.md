@@ -1,12 +1,14 @@
 # Fitness Quiz
 
-The fitness quiz can be added as an interactive section to a sports/fitness site. It's intended to engage the user and provde basic information on fitness techniques. Questions can be easily updated by the developer by changing the questions in the questions.js file.
+The fitness quiz is a browser based quiz game constructed with JavaScript, CSS and HTML5. It is mobile first and can be added as an interactive section to a sports/fitness site. The main aim of this project is to engage the user and provde basic information on fitness techniques. Questions can be easily added to/updated by the developer by changing the questions in the questions.js file.
+
+[Live link to website](https://ictwise.github.io/project-2/)
 
 <img src="assets\readMe\images\quiz_home_mobile.jpg" width="200" alt="woman doing yoga" >
 
 ## Features 
 
-The quis is meant to be very simple and clean.
+The quiz is meant to be simple and clean. The answers can be viewed in 
 
 Home screen - this contains an image a large start quiz button and a short set of instructions.
 
@@ -19,15 +21,69 @@ The end of quiz screen - has the progress bar showing which questions were answe
 
 - change image if pass or fail
 
-## Testing 
+## Testing
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
+### User Stories
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
+1. As a user visiting the site I want to test my fitness knowledge and be engaged by interesting facts..
+  * The quiz has a simple clean design and provides interaction with a site to engage users.
 
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
+2. As  a visiting user I want to be able to rate my understanding.
+  * At the end of the quiz users are provided with their score as a percentage.
 
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+3. As a site owner I want to be able to update/change/add to the question bank.
+  * Questions are stored in a separate file that can be easily edited.
+
+4. As a user I want the site to be responsive and usable on a variety of devices.
+  * The site is responsive, mobile first as it is anticipated most users will be accessing from a mobile device.
+
+
+### Manual Testing
+
+1. Buttons - check on all screen sizes, for all pages and sections.
+    * Check all buttons are acitve and do what they should. 
+    * Check that the restart button resets the score and the welcome heading.
+    * Check that the next button is disabled until an answer is clicked by the user.
+    * Check that the answer buttons are disabled once an answer is selected.
+2. Responsive
+    * Using chrome develper tools, verify that
+    the site is fully responsive with no overflow and no scroll. 
+    * Ensure answer buttons display 1 fr grid in mobile screens.
+3. Score
+    * Check that the score only increments for correct answers.
+    * Check that the score resets once the quiz is restarted.
+    * Check that the result displayed is accurate.
+
+
+### Code Validation
+1. HTML
+* HTML validation was done using [W3C Markup validator](https://validator.w3.org/)
+
+code passes
+
+2. CSS
+    * CSS Validation was done using [Jigsaw](https://jigsaw.w3.org/css-validator/)
+
+    * Tested throughout production 
+
+
+3. Lighthouse
+as a result of testing added alt to image and optimised image for the web
+#### Lighthouse results
+
+
+as a result of testing added alt to image and optimised image for the web
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Validator Testing 
@@ -73,18 +129,9 @@ You can break the credits section up into Content and Media, depending on what y
 
 
 
-## Other General Project Advice
+## future enhancements
 
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
+lcp image
+random question bank
+number questions
+results sheet with answers

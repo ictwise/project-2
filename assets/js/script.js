@@ -12,7 +12,9 @@ const scoreDiv = document.getElementById("scoreContainer");
 //load image
 
 let img = document.createElement("img");
-img.src = "assets/images/bg.jpg";
+img.src = "assets/images/bg.png";
+img.alt = "woman doing yoga";
+
 let div = document.getElementById("imgbg");
 div.appendChild(img);
 img.id = "imgbg";
@@ -133,6 +135,7 @@ function scoreRender() {
   closebtn.style.display = "block";
   img.style.display = "block";
   img.style.width = "40%";
+  img.style.marginTop = "40px";
   
 }
 
@@ -166,7 +169,7 @@ function backHome() {
 start.style.display = "inline-flex";
 div.appendChild(img);
 img.id = "imgbg";
-img.style.width = "90%";
+img.style.width = "60%";
 quiz.style.display = "none";
 resetbtn.style.display = "none";
 closebtn.style.display = "none";
