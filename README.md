@@ -8,7 +8,7 @@ The fitness quiz is a browser-based quiz game constructed with JavaScript, CSS a
 
 ## Features
 
-The quiz is meant to be simple and clean. It’s not a test more a tool for engaging a user of the site, an add in section for a more complex site.
+The quiz is meant to be beautiful because of its simple and clean desgin. It’s not a test - more a tool for engaging a user of the site, an add in section for a more complex site.
 
 ## UX
 
@@ -18,19 +18,19 @@ The concept for the quiz was that it should be simple, clean, an add on to an ex
 
 Figma was used to design the pages and pen and paper to create wireframes.
 
-#### Mock start screen
+### Mock start screen
 
 Start screen - this contains an image, a large start quiz button and a short set of instructions.
 
 <img src="assets\images\mobileStart.png" width="200" alt="mock start screen" >
 
-#### Mock Question screen
+### Mock Question screen
 
 The question screen - has a progress bar showing if answered questions have been correct or incorrect, the next question and four possible answers.
 
 <img src="assets\images\question.png" width="200" alt="mock question screen" >
 
-#### Mock Result screen
+### Mock Result screen
 
 The result screen - has the progress bar showing which questions were answered correctly, the users total score as a percentage and a repeat of the image.
 
@@ -55,19 +55,19 @@ The quiz was primarily designed to meet the criteria for milestone project 2. Fu
 
 1. As a user visiting the site I want to test my fitness knowledge and be engaged by interesting facts.
 
-* The quiz has a simple clean design and provides interaction with a site to engage users.
+    * The quiz has a simple clean design and provides interaction with a site to engage users.
 
 2. As  a visiting user I want to be able to rate my understanding.
 
-* At the end of the quiz users are provided with their score as a percentage.
+    * At the end of the quiz users are provided with their score as a percentage.
 
 3. As a site owner I want to be able to update/change/add to the question bank.
 
-* Questions are stored in a separate file that can be easily edited.
+    * Questions are stored in a separate file that can be easily edited.
 
 4. As a user I want the site to be responsive and usable on a variety of devices.
 
-* The site is responsive, mobile first as it is anticipated most users will be accessing from a mobile device.
+    * The site is responsive, mobile first as it is anticipated most users will be accessing from a mobile device.
 
 ### Manual Testing
 
@@ -98,8 +98,11 @@ No errors were returned for all HTML or CSS across all tests. Some warnings were
 1. HTML
 
 * I tested after I first created the index.html, occasionally throughout. On the penultimate test a rouge </P> was identified, probably I accidently left this when I converted the instructions to a list.
+
 <img src="assets\images\NuHtmlCheck1Error.jpg" width="600" alt="html validator first test" >
+
 This was fixed and the final test showed no errors.
+
 <img src="assets\images\NuHtmlCheck2NoError.jpg" width="600" alt="html validator  second test" >
 
 2. CSS
@@ -111,12 +114,12 @@ This was fixed and the final test showed no errors.
 
 3. Lighthouse
 *As a result of testing I added alt to images and optimised the image for the web.
+
 <img src="assets\images\lighthouseReport.jpg" width="600" alt="html validator first test" >
 
 ### Jest testing
 
-I did not use automated test driven development for this project but I did encorporate a simple Jest test. Questions are exported from questions.js imported into questions.test.js. A test is applied to check the length of the array is equal to the number of questions.
-
+I did not use automated test driven development for this project but I did encorporate a simple Jest test. Questions are exported from questions.js imported into questions.test.js. A test is applied to check the length of the array is equal to the number of questions. There are of course many other areas where automated testing could be applied in this project.
 
 ### Code fixes
 
@@ -164,13 +167,21 @@ Many tutorials were followed and visited but the most useful and those which I b
 
 [Quiz Tutorial](https://www.youtube.com/watch?v=rFWbAj40JrQ)
 
+This is a detailed guide to building a quiz,  I built this quiz following the tutorial (outside of this project), I found it extremly useful. I have taken ideas from here.
+
 [Quiz Tutorial](https://www.youtube.com/watch?v=49pYIMygIcU&t=1s)
 
+My main source of guidance for this project. I broke down the code into various parts, rebuilt it, dropped what I didn't want to include and adapted what I did.
+
 [Jest Tutorial](https://www.youtube.com/watch?v=FgnxcUQ5vho)
+
+Really useful for installing Jest into my environment.
 
 [Article on Jest](https://levelup.gitconnected.com/how-to-unit-test-html-and-vanilla-javascript-without-a-ui-framework-c4c89c9f5e56)
 
 The code institute tutorials.
+
+Helped me create the Jest code.
 
 Special thanks to my mentor, Chris Quinn and the student support team whos help was invaluable and the Slack study_group channel particulary Daisy Mc Girr.
 
