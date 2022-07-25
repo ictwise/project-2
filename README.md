@@ -113,6 +113,11 @@ This was fixed and the final test showed no errors.
 *As a result of testing I added alt to images and optimised the image for the web.
 <img src="assets\images\lighthouseReport.jpg" width="600" alt="html validator first test" >
 
+### Jest testing
+
+I did not use automated test driven development for this project but I did encorporate a simple Jest test. Questions are exported from questions.js imported into questions.test.js. A test is applied to check the length of the array is equal to the number of questions.
+
+
 ### Code fixes
 
 Initially when the user completed the quiz if they continued to click answers then more prog divs would appear, I fixed this by setting the quiz display to none when the score rendered and resetting all the variables when either the home or reset button was clicked.
